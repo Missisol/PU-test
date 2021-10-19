@@ -28,7 +28,7 @@ window.TrelloPowerUp.initialize({
     .then(function(board) {
       console.log(board)
       return [{
-        icon: '../assets/icon.png',
+        icon: '/assets/icon.png',
         text: 'PU-test',
         callback: function(t){
           return t.popup({
