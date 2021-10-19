@@ -102,3 +102,12 @@ dist
 
 # TernJS port file
 .tern-port
+
+# ParcelJS cache folder
+.parcel-cache/
+
+# ParcelJS build folder
+dist/
+
+# Local Netlify folder
+.netlify
