@@ -6,7 +6,7 @@ window.TrelloPowerUp.initialize({
     return t.card('coordinates')
     .then(function(card) {
       console.log(card);
-      if (card.coordinates) {
+      if (!card.coordinates) {
         const { latitude, longitude } = card.coordinates;
         return fetch('api.openweathermap.org/data/2.5/weather?q=London&appid=e12699b154eafb2ea213c8050784c38d')
         .then(res => res.json())
