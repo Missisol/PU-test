@@ -1,11 +1,11 @@
-console.log('Hello world!');
+import icon from '../assets/icon.png'
 
 
 window.TrelloPowerUp.initialize({
   'card-badges': function(t, opts) {
     return t.card('all')
     .then(function(card) {
-      console.log(card)
+      // console.log(card)
       if (!card.coordinates) {
         return fetch('https://api.openweathermap.org/data/2.5/weather?q=London&appid=e12699b154eafb2ea213c8050784c38d')
         .then(res => res.json())
@@ -26,9 +26,9 @@ window.TrelloPowerUp.initialize({
   'board-buttons': function(t, opts) {
     return t.board('all')
     .then(function(board) {
-      console.log(board)
+      // console.log(board)
       return [{
-        icon: '/assets/icon.png',
+        icon,
         text: 'PU-test',
         callback: function(t){
           return t.popup({
