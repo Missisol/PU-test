@@ -1,4 +1,5 @@
 import icon from '../assets/icon.png'
+import logo from '../assets/icon.svg'
 
 
 window.TrelloPowerUp.initialize({
@@ -28,7 +29,7 @@ window.TrelloPowerUp.initialize({
     .then(function(board) {
       // console.log(board)
       return [{
-        icon,
+        icon: logo,
         text: 'PU-test',
         callback: function(t){
           return t.popup({
