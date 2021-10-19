@@ -32,9 +32,8 @@ window.TrelloPowerUp.initialize({
         .then(weatherData => {
           console.log(weatherData)
           return [{
-            text: weatherData.main.temp.toString()
-          }, {
-            text: weatherData.wind.speed.toString()
+            text: 'PU-test',
+            color: 'blue'
           }
         ]
         }) 
